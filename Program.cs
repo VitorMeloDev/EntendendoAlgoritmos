@@ -1,5 +1,4 @@
-﻿using EntendendoAlgoritmos.Services;
-using System;
+﻿using System;
 
 namespace EntendendoAlgoritmos
 {
@@ -7,9 +6,14 @@ namespace EntendendoAlgoritmos
     {
         static void Main(string[] args)
         {
-            int[] ints = { 1, 2, 3, 4, 7, 10, 23, 45, 35, 66 };
+            var linkedList = new LinkedList<int>();
+            linkedList.Add(1);
+            linkedList.Add(2);
+            linkedList.Add(3);
+            linkedList.Print(); // Saída: 1 -> 2 -> 3 -> null
 
-            Console.WriteLine("\nO valor está na posição: " + PesquisaBinaria.Pesquisa(ints, 23));
+            linkedList.Remove(2);
+            linkedList.Print();// Saída: 1 -> 3 -> null
         }
     }
 }
