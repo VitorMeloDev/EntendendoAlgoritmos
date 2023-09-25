@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntendendoAlgoritmos.Services;
+using System;
 
 namespace EntendendoAlgoritmos
 {
@@ -6,14 +7,12 @@ namespace EntendendoAlgoritmos
     {
         static void Main(string[] args)
         {
-            var linkedList = new LinkedList<int>();
-            linkedList.Add(1);
-            linkedList.Add(2);
-            linkedList.Add(3);
-            linkedList.Print(); // Saída: 1 -> 2 -> 3 -> null
+            int[] list = { 7, 3, 1, 9, 5, 2, 8, 4, 6 };
+            int[] list2 = { };
 
-            linkedList.Remove(2);
-            linkedList.Print();// Saída: 1 -> 3 -> null
+            int x = Calculos.Somar(list);
+            Console.WriteLine("Soma: " + x);
+            Console.WriteLine("Valores na coleção: " + Calculos.Conta(list));
         }
     }
 }
