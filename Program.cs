@@ -7,12 +7,13 @@ namespace EntendendoAlgoritmos
     {
         static void Main(string[] args)
         {
-            int[] list = { 7, 3, 1, 9, 5, 2, 8, 4, 6 };
+            int[] list = { 7, 3, 25, 9, 5, 2, 8, 4, 6 };
             int[] list2 = { };
 
             int x = Calculos.Somar(list);
             Console.WriteLine("Soma: " + x);
             Console.WriteLine("Valores na coleção: " + Calculos.Conta(list));
+            Console.WriteLine("Maior numero na coleção: " + Calculos.Maior(list));
         }
     }
 }

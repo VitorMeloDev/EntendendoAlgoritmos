@@ -24,5 +24,19 @@ namespace EntendendoAlgoritmos.Services
 
             return 1 + Conta(list[1..]);
         }
+
+        public static int Maior(int[] list)
+        {
+            if (list.Length == 0) { throw new ArgumentException("A lista está vazia"); }
+
+            int x = list[0];
+
+            for (int i = 1; i < list.Length; i++)
+            {
+                if (list[i] > x) { x = list[i];}
+            }
+
+            return x;
+        }
     }
 }
